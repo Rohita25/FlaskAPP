@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flask Demo - Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav class="navbar">
+<div class="nav-left">
+<img src="{{ url_for('static', filename='logo.png') }}" alt="logo" class="logo">
+<span class="brand">Flask Demo</span>
+</div>
+<div class="nav-right">
+<a href="index.html">Home</a>
+<a href="form.html">Form</a>
+<a href="data.html">Data</a>
+</div>
+</nav>
+
+
+<main class="container">
+<h1>Welcome to the Flask Demo</h1>
+<p>This demo shows a homepage, a form (GET & POST), and a dynamic table read from a CSV file.</p>
+<div class="cards">
+<a class="card" href="/form">Fill the form</a>
+<a class="card" href="/data">View CSV data</a>
+</div>
+</main>
+
+
+<footer class="footer">Made for demo — Rohita</footer>
+</body>
+</html>
